@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+
+    display: inline;
+    
+}
+
+#slider {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background:rgb(83, 66, 66);
+    left: -300px;
+    margin-bottom: 30px;
+}
+
+#slider ul li {
+    list-style: none;
+    padding: 20px 23px;
+    font-size: 20px;
+   
+}
+
+#slider ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#slider ul li a:hover {
+    background-color: cornflowerblue;
+    text-transform: uppercase;
+}
+
+#slider.active {
+    left: 0;
+}
+
+#slider .btn{
+
+    top: 30px;
+    left: 330px;
+    position: absolute;
+}
+
+.btn span {
+    width: 45px;
+    height: 4px;
+    background: black;
+    display: block;
+    margin-top: 4px;
+}
+
+
+.logo {
+    width: auto;
+    text-transform: uppercase;
+    background-color: rgb(175, 174, 174);
+    padding: 60px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    background-color: rgb(236, 240, 248);
+    margin-top: 20px;
+}
+
+.title {
+    color: rgb(17, 226, 63);
+}
+
+.tanggal {
+    background-color: hotpink;
+}
+
+.container {
+    display: flex;
+    margin-left: 20px;
+}
+
+.perusahaan{
+    margin-left: 20px;
+}
+
+
+.skill p {
+    margin: 5px;
+}
+
+.level {
+    display: flex;
+    padding-left: 50px;
+    
+}
+
+.circle {
+    background-color: green;
+    width: 18px;
+    margin: 5px;
+    padding-top: 10px;
+    height: 18px;
+    border-radius: 50%;
+    
+}
+
+.circle-off {
+    background-color: white;
+    border-radius: 50%;
+    border-style: outset;
+    height: 18px;
+    width: 18px;
+    margin: 5px;
+}
+
+.content {
+    float: right;
+    width: 75%;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    padding-right: 20px;
+}
+
+aside img {
+    border-radius: 50%;
+    width: 200px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contact {
+    margin-top: 10px;
+}
+.contact p {
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width : 1000px) {
+
+    .content, aside {
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width : 1000px) {
+    
+    nav li a {
+        width: 50px;
+        padding: 5px; 
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+   
+}
+
+@media screen and (max-width : 1060px) {
+
+    aside img {
+        width: 150px;
+    }
+    
+}
